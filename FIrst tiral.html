@@ -1,101 +1,254 @@
-<hr>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spencer's personal site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spencer's Profile</title>
+
+  <!-- CSS -->
+  <style>
+    /* General page styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #111827;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #d1d5db;
+    }
+
+    /* Main content */
+    main {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    /* Sections */
+    section {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #111827;
+    }
+
+    /* Hidden About Me content */
+    #more-about-me {
+      display: none;
+      margin-top: 15px;
+    }
+
+    /* Button */
+    button {
+      margin-top: 15px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #111827;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #374151;
+    }
+
+    /* Interests */
+    .interests-list {
+      padding-left: 25px;
+    }
+
+    .interests-list li {
+      margin-bottom: 8px;
+    }
+
+    /* GitHub link */
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      header {
+        padding: 35px 15px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      main {
+        width: 92%;
+        margin: 25px auto;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      section h2 {
+        font-size: 22px;
+      }
+
+      body {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Spencer</h1>
+    <p>Computer Engineering student at NAHPI</p>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- About Me -->
+    <section>
+      <h2>About Me</h2>
+
+      <p>
+        I'm a Computer Engineering student based in Bamenda, Cameroon.
+        I build web and SaaS projects, and I learn best by building
+        real things rather than following tutorials step by step.
+      </p>
+
+      <!-- Extra information that starts hidden -->
+      <div id="more-about-me">
+        <p>
+          I am also interested in mobile app development, AI,
+          and building useful digital products. My goal is to
+          continue improving my programming skills by working
+          on real-world projects.
+        </p>
+      </div>
+
+      <!-- JavaScript button -->
+      <button id="show-more-btn">Show More</button>
+    </section>
 
 
+    <!-- Interests -->
+    <section>
+      <h2>Interests</h2>
 
-    </head>
-    <body>
-
-
-
-<table cellspacing="20px">
-
-        <tr>
-            <td>
-                 <img src="PXL_20250413_130105816.PORTRAIT.jpg" alt="" width="200px" height="200px">
-            </td>
-
-            <td><h1>SPENCER BRIGHTEST</h1>
-            <p>My name is spencer brightest i am a youtuber and also a social media influencer  </p>
-            <p><em>Youtuber and social media personnel  see more on <strong><a href="http://www.youtube.com">Youtube</a></strong></em></p>
-            </td>
-        </tr>
-    </table>
-<hr>
-<h3>Books and teaching</h3>
-<ul>
-    <li>
-        CONTENT CREATOR
-    </li>
-    <li>
-        TECHNICIAN
-    </li>
-</ul>
-<a href="hobbies.html">hobbies</a>
-
-<hr>
-    <table cellspacing="10px">
-      <thead>
-      <tr>
-          <td>Dates</td>
-              <td>work</td>
-              <td>Hours</td>
-      </tr>
+      <ul class="interests-list">
+        <li>Web development</li>
+        <li>MERN stack projects</li>
+        <li>Mobile app development</li>
+        <li>Artificial Intelligence</li>
+      </ul>
+    </section>
 
 
+    <!-- Find Me Online -->
+    <section>
+      <h2>Find Me Online</h2>
 
-        <tr>
-            <td>monday</td>
-              <td>teacher</td>
-            <td>4hrs</td>
-        </tr>
+      <p>
+        Check out my code on
+        <a
+          href="https://github.com/SpencerBrightest"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>.
+      </p>
+    </section>
 
-         <tr>
-            <td>monday</td>
-              <td>teacher</td>
-            <td>4hrs</td>
-        </tr>
-
-
-    </table>
-<hr>
-    <h3>skills</h3>
-
-          <table cellspacing="10px">
-        <tr>
-            <td>Ios developer</td>
-            <td>⭐⭐⭐⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>python developer</td>
-            <td>⭐⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Web developer</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-
-        <tr>
-            <td>photographer</td>
-            <td>⭐⭐⭐⭐⭐⭐</td>
-        </tr>
-    </table>
-
-<hr>
-<a href="hobbies.html">hobbies and contact</a>
+  </main>
 
 
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2026 Spencer. Built while learning HTML, CSS and JavaScript.
+    </p>
+  </footer>
 
 
+  <!-- JavaScript -->
+  <script>
+    // Get the button and the hidden About Me section
+    const button = document.getElementById("show-more-btn");
+    const moreAboutMe = document.getElementById("more-about-me");
 
+    // Run this code when the button is clicked
+    button.addEventListener("click", function () {
 
+      // Check if the extra information is hidden
+      if (moreAboutMe.style.display === "none") {
 
+        // Show the extra information
+        moreAboutMe.style.display = "block";
+
+        // Change button text
+        button.textContent = "Show Less";
+
+      } else {
+
+        // Hide the extra information
+        moreAboutMe.style.display = "none";
+
+        // Change button text
+        button.textContent = "Show More";
+      }
+
+    });
+  </script>
 
 </body>
 </html>
